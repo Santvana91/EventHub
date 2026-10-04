@@ -21,15 +21,23 @@ const config=  ({
   
   use: {
     browserName: 'chromium',
-    
-
-    /* Base URL to use in actions like `await page.goto('')`. */
-    // baseURL: 'http://localhost:3000',
-
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-   
+    baseURL : 'https://eventhub.rahulshettyacademy.com'
   },
 
+  projects :[
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome']},
+
+    },
+    
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox']},
+    },
+
+  ],
+ 
   
 });
 module.exports = config;
