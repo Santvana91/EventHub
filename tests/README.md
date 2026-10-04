@@ -1,0 +1,2 @@
+@playwright/test is test runner file.It provide features such as test,expect,fixtures ,assertions.Used to create and run automated tests.
+playwright is core browser package to lauch and interact with browser pagess
